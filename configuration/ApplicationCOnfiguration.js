@@ -1,0 +1,18 @@
+// npm i dotenv
+// npm install -g win-node-env => ye run karin gy toh hi  (npm run dev) wali cmd chale gi
+const dotenv = require('dotenv');
+
+let MyEnviorment={};
+if(process.env.NODE_ENV === 'testing'){
+    MyEnviorment = dotenv.config({path:`${__dirname}/../Application-Configuration-Test.env`});
+}
+
+if(process.env.NODE_ENV === 'development'){
+     MyEnviorment = dotenv.config({path:`${__dirname}/../Application-Configuration-Dev.env`});
+}
+
+if(process.env.NODE_ENV === 'production'){
+     MyEnviorment = dotenv.config({path:`${__dirname}/../Application-Configuration-Prod.env`});
+}
+
+// console.log(MyEnviorment);

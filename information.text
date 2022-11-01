@@ -1,0 +1,14 @@
+// Authentication and authorization are two vital information security processes that administrators use to protect systems and information. Authentication verifies the identity of a user or service, and authorization determines their access rights.
+
+// Authentication ==> login and register
+// authorization ==> kis user ko kis kis cheese ki access honi chaiye(role system)
+
+// jwt.verify(req.body.token,secret)
+// bcrypt.pre() ye hm use model mai krty hAIN to encrypt the password 
+// bcrypt.genSalt(10);  security layers
+// bcrypt.compare(req.body.password,HashedPassword)
+
+    "FirstName":"Admin",
+    "LastName":"Name",
+    "Email": "acs@gmail.com",
+    "Password": "1234pass"
